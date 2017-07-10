@@ -6,6 +6,13 @@ namespace ContinuousWeb.Tests
     [TestClass]
     public class HomeControllerTests
     {
+		[TestMethod]
+        public void IndexPageTest()
+        {
+			var homeController = new HomeController();
+            var result = homeController.Index();
+        }
+		
         [TestMethod]
         public void AboutPageTest()
         {
