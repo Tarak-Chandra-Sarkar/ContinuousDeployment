@@ -12,5 +12,12 @@ namespace ContinuousWeb.Tests
 			var homeController = new HomeController();
             var result = homeController.About();
         }
+		
+		[TestMethod]
+        public void ContactPageTest()
+        {
+			var homeController = new HomeController();
+            var result = homeController.Contact();
+        }
     }
 }
